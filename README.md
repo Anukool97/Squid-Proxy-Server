@@ -8,9 +8,12 @@ Setting up squid proxy server with "Custom error page for ERROR 403"
 
      
     <NOTE : GO TO FIREFOX AND CHANGE THE PROXY SETTING >
-    1A> In firefox go to options -> Advanced -> Network -> configure how firefox connects ->
+    1A> In firefox go to options -> Advanced -> Network -> configure how firefox connects 
+  
     1B> Then in HTTP Proxy : <TYPE THE IP ADDRESS OF SERVER MACHINE ONLY>
+  
     1C>  in PORT : 3128
+    
     <NOTE : This port number is default port number for proxy server>
       
 2. vim /etc/squid/squid.conf
@@ -81,7 +84,7 @@ Setting up squid proxy server with "Custom error page for ERROR 403"
  **************************************************************************************************************************************
  #                                                                                                                                     #
  #                                                                                                                                     #
- #                        SETTING UP CUSTOM ERROR PAGE FOR 403 FORBIDDEN "ACCESS DENIED" BY WEBMATER ERROR PAGE                        #
+ #                        SETTING UP CUSTOM ERROR PAGE FOR 403 FORBIDDEN "ACCESS DENIED" BY WEBMASTER ERROR PAGE                       #
  #                                                                                                                                     #
  #                                                                                                                                     #
  ***************************************************************************************************************************************
@@ -91,18 +94,25 @@ Setting up squid proxy server with "Custom error page for ERROR 403"
    #search for "acl MyNetwork src 192.168.0.0/16"
    #below that line type the following 
   
+  AS you can see i am creating custom error page only for google.com
+  
    2. acl abcd dstdomain .google.com
       #note here abcd is again a variable
       #below that line type ...
+      
    3. deny_info ERR_google abcd
+   
    4. http_access deny abcd
        #save and quit
       
 #generally error html page are in /usr/share/squid/errors/templates
+
    4A> cd  /usr/share/squid/errors/templates
    
    5. ls (to check all html specific error files)
+   
    6. vim ERR_google 
+   
    #since we want to show info from our own custom error page file .
      
      <html>
@@ -140,7 +150,7 @@ Setting up squid proxy server with "Custom error page for ERROR 403"
 
 # IMPORTANT TO NOTE
 
-1> Firefox setting of the client machine has to be changed to manual proxy setting and the ip address set will be to ip address of server machine only .
+1> Firefox setting of the client machine has to be changed to manual proxy setting and the ip address will be set to ip address of server machine only .
 here proxy :172.16.50.72 will be set with port 3128
 
 
@@ -150,16 +160,3 @@ here proxy :172.16.50.72 will be set with port 3128
 #### Thank YOU ####
 #### Created by Anukool Srivastava #####
  
- 
- 
- 
- 
- 
- 
-     
-     
-     
-     
-      
-      
-      
