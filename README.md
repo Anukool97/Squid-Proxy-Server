@@ -76,7 +76,7 @@ Setting up squid proxy server with "Custom error page for ERROR 403"
  10. service squid restart
  
  
- #NO just go to firefox and you will see an authentication window , type the username and password there
+ #NOTE just go to firefox and you will see an authentication window , type the username and password there
  #then type .msn.com and you will find it blocked , and other websites also while google.com and other websites will be running
  
  
