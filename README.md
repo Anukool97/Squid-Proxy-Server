@@ -115,26 +115,31 @@ Setting up squid proxy server with "Custom error page for ERROR 403"
    
    #since we want to show info from our own custom error page file .
      
-     <html>
-     <title> CUSTOM ERROR</title>
-     <body>
-     
-     <h1>This is just a custom error page example to show you. YOU can link it with custom css and custom javascript file </h1> 
-     
-      <style>
-      
-      body {
-      background-color: linen;
-            }
-      h1 {
-        color: maroon;
-        margin-left: 40px;
-      } 
-      
-      </style>
-      
-      </body>
-      </html>
+<html>
+<head>
+<title>ERROR ACCESS DENIED BY Pcloudy</title>
+<style>
+body {background-color: powderblue;}
+h1   {color: grey;}
+p    {color: red;}
+</style>
+</head>
+
+<body style="font-family:verdana; margin:0 auto;">
+
+<img src="https://media.licdn.com/dms/image/C510BAQGeEl73gX0Ozw/company-logo_200_200/0?e=2159024400&v=beta&t=AXswUI9W3WQYRZOF1_IKv_0T5BHwXiwm9JrLyUtR94E" alt="pcloudy image">
+<br>
+<br>
+<br>
+<p>
+<h1> You are not allowd to access this website <h1>
+<br>
+<h3> For any query please contact webmaster </h3>
+</p>
+
+</body>
+</html>
+
      
 #save and quit 
 #now you have to restart proxy server
