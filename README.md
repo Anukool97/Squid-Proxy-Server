@@ -151,12 +151,46 @@ Setting up squid proxy server with "Custom error page for ERROR 403"
 # IMPORTANT TO NOTE
 
 1> Firefox setting of the client machine has to be changed to manual proxy setting and the ip address will be set to ip address of server machine only .
-here proxy :172.16.50.72 will be set with port 3128
+here proxy :(SERVER IP) will be set with port 3128
 
+# -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------HOW TO STOP PEOPLE ACCESS THE INTERNET FROM TERMINAL AND ALLOW ONLY AFTER GIVING USERNAME AND PASSWORD FOR THAT PROXY SERVER FROM TERMINAL---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------#
+
+> Go to /etc/apt directory
+1. cd /etc/apt
+
+2. vim apt.conf 
+( apt.conf should only be the name of the file please donot make with anyother name )
+
+Now write the following inside the file
+
+# NOTE just copy paste below lines , donot write your username and password here , it is just general instruction given to machine to check it.
+
+3. Acquire::http::proxy "http://username:password@proxyserver:port/";
+
+4. Acquire::https::proxy "https://username:password@proxyserver:port/";
+
+5. Acquire::socks::proxy "socks://username:password@proxyserver:port/";
+
+save and Quit it.
+
+# Always remember to restart the service , ie "service squid restart"
+
+# go to client machine or you can check for server machine also
+
+After restarting the service, go to terminal with root user ("#" symbol)  and type ...
+
+5a. curl www.google.com
+# it will not let you run any command now from terminal
+
+6. export http_proxy="http://usercreated_by_you:psswordcreated_by_you@serverIPaddress:3128"
+# here username , password and ip will be put by your side to get the authentication from server .
+
+6a. curl www.google.com 
+
+Type any command and it will work since you have the access to proxy server.
 
 
 
 
 #### Thank YOU ####
 #### Created by Anukool Srivastava #####
- 
