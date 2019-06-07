@@ -115,7 +115,7 @@ Setting up squid proxy server with "Custom error page for ERROR 403"
    
    #since we want to show info from our own custom error page file write html code inside it .
    
-                   <html>
+                  <html>
                   <head>
                   <title>ERROR ACCESS DENIED BY Pcloudy</title>
                   <style>
@@ -134,7 +134,7 @@ Setting up squid proxy server with "Custom error page for ERROR 403"
                   <p>
                   <h2> You are not allowd to access this website <h2>
                   <br>
-                  <h4> For any query please contact webmaster </h4>
+                  <h4> For any query please contact webmaster ERROR: 403</h4>
                   </p>
 
                   </body>
