@@ -70,8 +70,11 @@ Setting up squid proxy server with "Custom error page for ERROR 403" and authori
  
     #type here
     9a> .msn.com
+    
     9b> .sstsinc.com
+    
     9c> .abc.com
+    
     #these are some example websites domain (no hard feelings for any 😛)
  10. service squid restart
  
