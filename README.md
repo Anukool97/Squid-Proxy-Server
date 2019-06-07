@@ -113,23 +113,33 @@ Setting up squid proxy server with "Custom error page for ERROR 403"
    
    6. vim ERR_google 
    
-   #since we want to show info from our own custom error page file .
+   #since we want to show info from our own custom error page file write html code inside it .
    
-     
-<html>
-<head>
-<title>ERROR ACCESS DENIED BY Pcloudy</title>
-</head>
-<body style="font-family:verdana; margin:0 auto; background-color: powderblue;">
-<br>
-<p style="color: red;">
-<h1 style="color: grey;"> You are not allowd to access this website <h1>
-<br>
-<h3> For any query please contact webmaster </h3>
-</p>
+                   <html>
+                  <head>
+                  <title>ERROR ACCESS DENIED BY Pcloudy</title>
+                  <style>
+                  body {background-color: powderblue;}
+                  h2   {color: grey;}
+                  h4   {color: red;}
+                  </style>
+                  </head>
 
-</body>
-</html>
+                  <body style="font-family:verdana; margin:0 auto;">
+
+                  <img src="https://media.licdn.com/dms/image/C510BAQGeEl73gX0Ozw/company-logo_200_200/0?e=2159024400&v=beta&t=AXswUI9W3WQYRZOF1_IKv_0T5BHwXiwm9JrLyUtR94E" alt="pcloudy image">
+                  <br>
+                  <br>
+                  <br>
+                  <p>
+                  <h2> You are not allowd to access this website <h2>
+                  <br>
+                  <h4> For any query please contact webmaster </h4>
+                  </p>
+
+                  </body>
+                  </html>
+
 
      
 #save and quit 
