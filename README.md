@@ -37,6 +37,7 @@ Setting up squid proxy server with "Custom error page for ERROR 403" and authori
  
  3a. acl blocked_url dstdomain "/etc/squid/blocked_sites.acl"
  #the very next line type as below
+ 
  3b. http_access deny blocked_url
  #save and quit to come out of vim
 
