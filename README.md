@@ -21,6 +21,7 @@ Setting up squid proxy server with "Custom error page for ERROR 403" and authori
      
      
      2A> search for keyword "http_access deny all"
+     
      2B> change it to "http_access allow all"
      
      
@@ -53,16 +54,21 @@ Setting up squid proxy server with "Custom error page for ERROR 403" and authori
   #IN 4rth , 5th and 6th line (just make sure these line are afterward the above lines typed in this config file )
   
 7a>  auth_param basic program /usr/lib/squid/basic_ncsa_auth /etc/squid/passwd2
-#-----------------------------------custom network---------------- 
+
+#-----------------------------------custom network----------------
+
 7b> acl MyNetwork src 172.16.50.1-172.16.50.250     #this is the range of ip address
-7c> acl squid_users proxy_auth REQUIRED 
-7d> http_access allow squid_users 
+
+7c> acl squid_users proxy_auth REQUIRED
+
+7d> http_access allow squid_users
+
 7e> http_access allow MyNetwork
+
 #-----------------------------------custom network--------------- #modified 
   
      
  8. service squid restart
- 
  
  #in order to block selected websites open the file below 
  
