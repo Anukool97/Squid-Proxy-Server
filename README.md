@@ -119,18 +119,11 @@ Setting up squid proxy server with "Custom error page for ERROR 403"
 <html>
 <head>
 <title>ERROR ACCESS DENIED BY Pcloudy</title>
-<style>
-  
-body {background-color: powderblue;}
-h1   {color: grey;}
-p    {color: red;}
-
-</style>
 </head>
-<body style="font-family:verdana; margin:0 auto;">
+<body style="font-family:verdana; margin:0 auto; background-color: powderblue;">
 <br>
-<p>
-<h1> You are not allowd to access this website <h1>
+<p style="color: red;">
+<h1 style="color: grey;"> You are not allowd to access this website <h1>
 <br>
 <h3> For any query please contact webmaster </h3>
 </p>
