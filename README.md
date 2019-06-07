@@ -153,7 +153,7 @@ Setting up squid proxy server with "Custom error page for ERROR 403"
 1> Firefox setting of the client machine has to be changed to manual proxy setting and the ip address will be set to ip address of server machine only .
 here proxy :(SERVER IP) will be set with port 3128
 
-# -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------HOW TO STOP PEOPLE ACCESS THE INTERNET FROM TERMINAL AND ALLOW ONLY AFTER GIVING USERNAME AND PASSWORD FOR THAT PROXY SERVER FROM TERMINAL---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------#
+# ********************************************************************************************************************************************HOW TO STOP PEOPLE ACCESS THE INTERNET FROM TERMINAL AND ALLOW ONLY AFTER GIVING USERNAME AND PASSWORD FOR THAT PROXY SERVER FROM TERMINAL*****************************************************************************************************************************************
 
 > Go to /etc/apt directory
 1. cd /etc/apt
