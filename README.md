@@ -130,11 +130,13 @@ Setting up squid proxy server with "Custom error page for ERROR 403"
                   <img src="https://media.licdn.com/dms/image/C510BAQGeEl73gX0Ozw/company-logo_200_200/0?e=2159024400&v=beta&t=AXswUI9W3WQYRZOF1_IKv_0T5BHwXiwm9JrLyUtR94E" alt="pcloudy image">
                   <br>
                   <br>
-                  <br>
                   <p>
-                  <h2> You are not allowd to access this website <h2>
+                  <h2> ERROR: 403 </h2>
                   <br>
-                  <h4> For any query please contact webmaster ERROR: 403</h4>
+                  <h2>You are not allowd to access this website <h2>
+                  <br>
+                  <br>
+                  <h4> For any query please contact webmaster </h4>
                   </p>
 
                   </body>
