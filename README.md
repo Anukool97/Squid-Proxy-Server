@@ -1,5 +1,5 @@
 # Squid-Proxy-Server-
-Setting up squid proxy server with "Custom error page for ERROR 403"
+Setting up squid proxy server with "Custom error page for ERROR 403" and authorizing user from terminal as well as firefox GUI.
 
 # <NOTE : THESE ALL COMMANDS ARE INSIDE ROOT USER >
   ( TO be permanently as a root user type "sudo  su")
