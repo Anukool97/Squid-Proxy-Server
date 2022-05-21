@@ -208,6 +208,21 @@ After restarting the service, go to terminal with root user ("#" symbol)  and ty
 Type any command and it will work since you have the access to proxy server.
 
 
+                    ###  Some Additional command to get through proxy server while doing curl  ###
+   
+ ### curl  -A "Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko" -x 10.227.171.99:80 -v --insecure --location --request POST '<here your api you wanted to connect , example amazon aws api' \
+--header 'x-api-key: provide amazon api key' \
+--header 'Content-Type: application/json' \
+-d '{
+    "username": "<username for the api>",
+    "password": "<password for the api>"
+}'  
+
+   
+   
+### curl  -A "Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko" -x http://username:password@<ip>:80 -v --insecure --location --request POST 'http://<servername>:8081/nexus/content/repositories/test.txt'
+
+
 
 
 #### Thank YOU ####
